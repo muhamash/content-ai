@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import './App.css';
 import Login from './components/login/login';
+import Registration from './components/registration/registration'
 import Nav from './components/nav';
 import { motion, useAnimation, motionValue } from 'framer-motion';
 
@@ -18,7 +19,8 @@ function App() {
       }}
     >
         {/* <Nav /> */ }
-        <Login/>
+        <Login />
+        <Registration/>
     </motion.div>
     </div>
   );

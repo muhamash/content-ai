@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Checkbox, Form, Input } from 'antd';
+import TypingAnimation from '../animations/typing';
 
 
 const onFinish = ( values ) =>
@@ -15,8 +16,14 @@ const onFinishFailed = ( errorInfo ) =>
 
 const Login = () => (
     <div className='py-10'>
-        <div className='w-[40%] flex mx-auto bg-gradient-to-br from-green-500 via-violet-500 to-red-500 p-[1.5px] rounded-md shadow-md shadow-[#c1bfbb]'>
-            <div className='bg-white w-full flex items-center rounded-md'>
+        <div className='w-[40%] flex mx-auto bg-gradient-to-br from-green-500 via-violet-500 to-red-500 p-[1.5px] rounded-md shadow-md shadow-[#9c9ef693]'>
+            <div className='bg-white w-full flex flex-col items-center rounded-md'>
+                <div class="py-3">
+                    <p id="typingText" class="text-2xl font-OpenSans font-semibold">
+                        <TypingAnimation message=" Please log in to your account!! "/>
+                    </p>
+                </div>
+
                 <Form
                     className='flex flex-col mx-auto py-5'
                     name="basic"
