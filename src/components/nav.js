@@ -1,17 +1,7 @@
 import { PhoneOutlined } from '@ant-design/icons';
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import UserLogin from './login/login';
-
 
 const Nav = () =>
 {
-    const [ isOpen, setOpen ] = useState( false )
-    const dropDown = () =>
-    {
-        setOpen( true )
-    };
-
     return (
         <div className="flex justify-evenly px-5 py-10">
             <div className="text-blue-600 text-3xl">
@@ -44,7 +34,7 @@ const Nav = () =>
                 </div>
                 {/* user log in */ }
                 <div>
-                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded'>
+                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded shadow-md shadow-violet-200'>
                         Login
                     </button>
                 </div>
