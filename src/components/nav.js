@@ -42,54 +42,11 @@ const Nav = () =>
                         </div>
                     </div>
                 </div>
-                <div className="relative inline-block text-left">
-                    <div>
-                        <button
-                            onClick={ dropDown }
-                            type="button"
-                            className="inline-flex justify-center w-full rounded-md border border-gray-300 bg-white px-6 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300"
-                            id="options-menu"
-                            aria-haspopup="true"
-                            aria-expanded="true"
-                        >
-                            Login
-                        </button>
-                    </div>
-                    { isOpen && (
-                        <motion.div
-                            initial={ { opacity: 0, y: -50 } } // Initial state of the component
-                            animate={ { opacity: 2, y: 3 } } // Animation that it should perform
-                            transition={ { duration: 0.5 } } // Duration of the animation
-                        >
-                            <div
-                                className="origin-top-right absolute right-0 mt-2 w-fit rounded-md shadow-xl bg-white ring-2 ring-violet-900 ring-opacity-20 transition-all duration-300"
-                                role="menu"
-                                aria-orientation="vertical"
-                                aria-labelledby="options-menu"
-                            >
-                                <div className="py-1" role="none">
-                                    <a
-                                        // onClick={ handleClick}
-                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer hover:text-violet-700"
-                                        role="menuitem"
-                                    >
-                                        Login
-                                    </a>
-                                    {/* <div className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer hover:text-violet-700'>
-                                        <Link to="./userLogin">Login</Link>
-                                    </div> */}
-                                    <a
-                                        // onClick={}
-                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer hover:text-violet-700"
-                                        role="menuitem"
-                                    >
-                                        Register
-                                    </a>
-                                    {/* Add more dropdown items as needed */ }
-                                </div>
-                            </div>
-                        </motion.div>
-                    ) }
+                {/* user log in */ }
+                <div>
+                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded'>
+                        Login
+                    </button>
                 </div>
             </div>
         </div>
