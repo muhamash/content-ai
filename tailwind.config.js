@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       colors: {
         'navItems': '#4338ca',
+      },
+      fontFamily: {
+        'OpenSans': [ 'Open Sans', 'sans-serif' ],
+        
       }
     },
   },
