@@ -29,7 +29,7 @@ const TypingAnimation = (props) => {
 
     return (
         <div className="py-5">
-            <p className="text-2xl font-OpenSans font-semibold">
+            <p>
                 {currentText}
                 {isTyping && <span className="animate-blink">...</span>}
             </p>

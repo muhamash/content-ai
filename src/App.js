@@ -19,7 +19,7 @@ function App() {
       }}
     >
         {/* <Nav /> */ }
-        <Login />
+        {/* <Login /> */}
         <Registration/>
     </motion.div>
     </div>
